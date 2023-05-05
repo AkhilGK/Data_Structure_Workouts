@@ -8,12 +8,26 @@ import 'insertion_sort.dart';
 import 'linked_list.dart';
 import 'rec.dart';
 import 'recursion.dart';
+import 'selection.dart';
+import 'stack.dart';
 import 'string.dart';
 
 void main() {
+  Stack stackObj = Stack();
+  stackObj.pushStack(10);
+  stackObj.pushStack(17);
+  stackObj.pushStack(7);
+  stackObj.display();
+  stackObj.popStack();
+  stackObj.popStack();
+
+  stackObj.display();
+
   // print(fun(5, 0));
-  List<int> list = [10, 2, 2, 2, 7, 2];
-  print(insertionSort(list));
+
+  // List<int> list = [1, 10, 2, 2, 7, 2];
+  // print(selectionSort(list));
+  // print(insertionSort(list));
   // print(bubbleSort(list));
   // print(factorial(3));
   // print(factorial(5));
